@@ -1,2 +1,2 @@
-# Garg Foundation Console
-Console for Garg Foundation Systems
+# BCRTI website and management console
+Console for BCRTI website and management Systems
