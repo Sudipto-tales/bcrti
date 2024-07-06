@@ -66,7 +66,7 @@
                         </li>
                         <li><a href="#">ABOUT</a></li>
                         <li>
-                            <a href="<?php echo base_url() ?>comming_soon">ACADEMIC</a>
+                            <a href="#">ACADEMIC</a>
                             <ul class="nav-dropdown xs-icon-menu">
                                 <li class="single-menu-item"><a href="<?php echo base_url() ?>cource"><i class="icon icon-presentation2"></i> Cources</a></li>
                                 <li class="single-menu-item"><a href="<?php echo base_url() ?>digital_library"><i class="icon icon-presentation"></i> Digital Laboratory</a></li>
@@ -75,7 +75,7 @@
                         <li><a href="<?php echo base_url() ?>faculty">FACULTIES</a>
 
                         </li>
-                        <li><a href="#">BLOG</a>
+                        <li><a href="<?php echo base_url() ?>comming_soon">BLOG</a>
                         </li>
                         <li>
                             <a href="<?= base_url() ?>contact_us">CONTACTS</a>
@@ -180,101 +180,6 @@
         </div>
     </section>
 
-    <section class="xs-section-padding gray-bg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <div class="agency-section-title text-center section-title-style2">
-                        <div class="title-icon">
-                            <i class="icon icon-users3 gradient-icon"></i>
-                        </div>
-                        <h4 class="main-title">Meet Our Team</h4>
-                        <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
-                            ocean. A small river named Duden flows by their place and supplies it with the necessary
-                            regelialia.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row xs-mb-5">
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-team-style2">
-                        <div class="image">
-                            <img src="assets/images/team/team-5.jpg" alt>
-                            <div class="hover-area text-center">
-                                <div class="team-content">
-                                    <h4 class="xs-title">CHARLOTTE GRACE</h4>
-                                    <span>Chief Executive</span>
-                                </div>
-                                <ul class="social-list version-5">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-team-style2">
-                        <div class="image">
-                            <img src="assets/images/team/team-6.jpg" alt>
-                            <div class="hover-area text-center">
-                                <div class="team-content">
-                                    <h4 class="xs-title">ROBERT S NUNN</h4>
-                                    <span>Talent Director</span>
-                                </div>
-                                <ul class="social-list version-5">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-team-style2">
-                        <div class="image">
-                            <img src="assets/images/team/team-7.jpg" alt>
-                            <div class="hover-area text-center">
-                                <div class="team-content">
-                                    <h4 class="xs-title">JOSEPH L KEESLER</h4>
-                                    <span>Interior Design</span>
-                                </div>
-                                <ul class="social-list version-5">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-team-style2">
-                        <div class="image">
-                            <img src="assets/images/team/team-8.jpg" alt>
-                            <div class="hover-area text-center">
-                                <div class="team-content">
-                                    <h4 class="xs-title">GERALD Y KOHL</h4>
-                                    <span>Product Investigator</span>
-                                </div>
-                                <ul class="social-list version-5">
-                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
     <section class="xs-section-padding" data-scrollax-parent="true">
@@ -293,7 +198,7 @@
                 <div class="col-md-8 mx-auto">
                     <div class="blog-single-post">
                         <div class="post-media">
-                            <img src="assets/images/album/img6.jpg" alt>
+                            <img src="<?php echo base_url() ?>assets/images/album/img6.jpg" alt>
                         </div>
                         <div class="post-body">
                             <h2 class="section-title">We’re <span class="gradient-title"><em>presently</em></span></h2>
@@ -403,7 +308,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="working-progress-images">
-                                <img src="assets/images/album/class_room.jpg" alt>
+                                <img src="<?php echo base_url() ?>assets/images/album/class_room.jpg" alt>
                             </div>
                         </div>
                     </div>
@@ -425,7 +330,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="working-progress-images">
-                                <img src="assets/images/album/img10.jpg" alt>
+                                <img src="<?php echo base_url() ?>assets/images/album/img10.jpg" alt>
                             </div>
                         </div>
                     </div>
@@ -447,7 +352,7 @@
                         </div>
                         <div class="col-md-6">
                             <div class="working-progress-images">
-                                <img src="assets/images/album/img5.jpg" alt>
+                                <img src="<?php echo base_url() ?>assets/images/album/img5.jpg" alt>
                             </div>
                         </div>
                     </div>
@@ -455,9 +360,9 @@
             </div>
         </div>
         <div class="doodle-parallax">
-            <img src="assets/images/doodle/5.png" data-scrollax="properties: { translateY: '-200%' }"
+            <img src="<?php echo base_url() ?>assets/images/doodle/5.png" data-scrollax="properties: { translateY: '-200%' }"
                 class="single-doodle one" alt>
-            <img src="assets/images/doodle/6.png" data-scrollax="properties: { translateY: '-150%' }"
+            <img src="<?php echo base_url() ?>assets/images/doodle/6.png" data-scrollax="properties: { translateY: '-150%' }"
                 class="single-doodle two" alt>
         </div>
     </section>
@@ -550,7 +455,7 @@
                             <i class="icon icon-quote watermark-icon"></i>
                             <p><em>Never regard study as a duty, but as the enviable opportunity to learn .</em></p>
                             <div class="review-image">
-                                <img src="assets/images/default_logo.jpg" alt>
+                                <img src="<?php echo base_url() ?>assets/images/albart.jpeg" alt>
                             </div>
                             <div class="reviewer-bio">
                                 <h5><em>~ Albert Einstein</em></h5>
@@ -561,7 +466,7 @@
                             <i class="icon icon-quote watermark-icon"></i>
                             <p><em>Education is the manifestetion of the perfection already in man</em></p>
                             <div class="review-image">
-                                <img src="assets/images/default_logo.jpg" alt>
+                                <img src="<?php echo base_url() ?>assets/images/narendra.jpg"" alt>
                             </div>
                             <div class="reviewer-bio">
                                 <h5><em>~ Swami Vivekanada</em></h5>
@@ -569,14 +474,12 @@
                         </div>
                         <div class="review-content text-center">
                             <i class="icon icon-quote watermark-icon"></i>
-                            <p><em>A human without knowledge respect for elders, charity, wisdom, good conduct, virtues
-                                    and unaware of his duties, is a burden to earth. He is equal to an animal in form of
-                                    a human.</em></p>
+                            <p><em>Programming is a skill best aquired by practice and example rather than books..</em></p>
                             <div class="review-image">
-                                <img src="assets/images/default_logo.jpg" alt>
+                                <img src="<?php echo base_url() ?>assets/images/turing.jpeg" alt>
                             </div>
                             <div class="reviewer-bio">
-                                <h5><em>Sanskrit Shlok..</em></h5>
+                                <h5><em>Alan Turing</em></h5>
                             </div>
                         </div>
                     </div>

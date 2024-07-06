@@ -4,10 +4,10 @@
     <!-- Brand Logo Light -->
     <a href="index.html" class="logo logo-light">
         <span class="logo-lg">
-            <img src="<?php echo base_url() ?>raw/assets/images/logo.png" alt="logo">
+            <img src="<?php echo base_url() ?>raw/assets/images/logo1.png" alt="logo">
         </span>
         <span class="logo-sm">
-            <img src="<?php echo base_url() ?>raw/assets/images/logo-sm.png" alt="small logo">
+            <img src="<?php echo base_url() ?>raw/assets/images/logo1.png" alt="small logo">
         </span>
     </a>
 

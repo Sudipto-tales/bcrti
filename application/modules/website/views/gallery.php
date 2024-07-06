@@ -50,15 +50,15 @@
 
 <body>
     
-<header class="xs-header header-transparent nav-lights">
+<header class="xs-header header nav-lights">
         <div class="container">
             <nav class="xs-menus clearfix">
-                <div class="nav-header">
+                <!-- <div class="nav-header">
                     <a class="nav-brand" href="index.html">
                         <img src="assets/images/crti_logo-removebg.png" alt>
                     </a>
                     <div class="nav-toggle"></div>
-                </div>
+                </div> -->
                 <div class="nav-menus-wrapper align-to-right">
 
                     <ul class="nav-menu">
@@ -67,7 +67,7 @@
                         </li>
                         <li><a href="#">ABOUT</a></li>
                         <li>
-                            <a href="<?php echo base_url() ?>comming_soon">ACADEMIC</a>
+                            <a href="#">ACADEMIC</a>
                             <ul class="nav-dropdown xs-icon-menu">
                                 <li class="single-menu-item"><a href="<?php echo base_url() ?>cource"><i class="icon icon-presentation2"></i> Cources</a></li>
                                 <li class="single-menu-item"><a href="<?php echo base_url() ?>digital_library"><i class="icon icon-presentation"></i> Digital Laboratory</a></li>
@@ -76,7 +76,9 @@
                         <li><a href="<?php echo base_url() ?>faculty">FACULTIES</a>
 
                         </li>
-                        <li><a href="#">BLOG</a>
+                        <li><a href="<?php echo base_url() ?>gallery">Gallery</a>
+                        </li>
+                        <li><a href="<?php echo base_url() ?>comming_soon">BLOG</a>
                         </li>
                         <li>
                             <a href="<?= base_url() ?>contact_us">CONTACTS</a>
