@@ -40,7 +40,6 @@
 
 <body>
 
-    <?php $this->load->view('panel_base\sections\preloader.php') ?>
     <!-- Begin page -->
     <div class="wrapper">
 
@@ -80,7 +79,7 @@
                                 <div class="card-body">
                                     <div class="tab-content">
                                         <div class="tab-pane show active" id="input-types-preview">
-                                            <?php echo form_open_multipart('photo_upload'); ?>
+                                            <?php echo form_open_multipart('submission'); ?>
 
                                             <?php echo isset($error) ? $error : ''; ?>
 

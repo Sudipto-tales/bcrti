@@ -49,48 +49,8 @@
 </head>
 
 <body>
-    <header class="xs-header header-transparent nav-lights">
-        <div class="container">
-            <nav class="xs-menus clearfix">
-                <!-- <div class="nav-header">
-                    <a class="nav-brand" href="index.html">
-                        <img src="assets/images/crti_logo-removebg.png" alt>
-                    </a>
-                    <div class="nav-toggle"></div>
-                </div> -->
-                <div class="nav-menus-wrapper align-to-right">
+    <?php $this->load->view("panel_base/sections/header1.php"); ?>
 
-                    <ul class="nav-menu">
-                        <li><a href="<?php echo base_url() ?>home">HOME</a>
-
-                        </li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li>
-                            <a href="#">ACADEMIC</a>
-                            <ul class="nav-dropdown xs-icon-menu">
-                                <li class="single-menu-item"><a href="<?php echo base_url() ?>cource"><i class="icon icon-presentation2"></i> Cources</a></li>
-                                <li class="single-menu-item"><a href="<?php echo base_url() ?>digital_library"><i class="icon icon-presentation"></i> Digital Laboratory</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="<?php echo base_url() ?>faculty">FACULTIES</a>
-
-                        </li>
-                        <li><a href="<?php echo base_url() ?>comming_soon">BLOG</a>
-                        </li>
-                        <li>
-                            <a href="<?= base_url() ?>contact_us">CONTACTS</a>
-                        </li>
-                    </ul>
-                    <ul class="xs-menu-tools">
-
-                        <li>
-                            <a href="#" class="navSidebar-button"><i class="icon icon-burger-menu"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
     <div class="xs-inner-banner" style="background-image:url('')">
         <div class="container">
             <div class="row">
@@ -116,7 +76,7 @@
                 <div class="col-md-2">
                     <div class="about-countdown-content">
                         <h3>PLACED</h3>
-                        <span class="number-percentage-count number-percentage" data-value="50"
+                        <span class="number-percentage-count number-percentage" data-value="60"
                             data-animation-duration="1500">0</span>
                     </div>
                 </div>
@@ -130,8 +90,8 @@
                 <div class="col-md-2">
                     <div class="about-countdown-content">
                         <h3>COURCES</h3>
-                        <span class="number-percentage-count number-percentage" data-value="200"
-                            data-animation-duration="1500">0</span><span>+</span>
+                        <span class="number-percentage-count number-percentage" data-value="3"
+                            data-animation-duration="100">0</span><span>+</span>
                     </div>
                 </div>
                 <div class="col-md-2">
@@ -360,10 +320,10 @@
             </div>
         </div>
         <div class="doodle-parallax">
-            <img src="<?php echo base_url() ?>assets/images/doodle/5.png" data-scrollax="properties: { translateY: '-200%' }"
-                class="single-doodle one" alt>
-            <img src="<?php echo base_url() ?>assets/images/doodle/6.png" data-scrollax="properties: { translateY: '-150%' }"
-                class="single-doodle two" alt>
+            <img src="<?php echo base_url() ?>assets/images/doodle/5.png"
+                data-scrollax="properties: { translateY: '-200%' }" class="single-doodle one" alt>
+            <img src="<?php echo base_url() ?>assets/images/doodle/6.png"
+                data-scrollax="properties: { translateY: '-150%' }" class="single-doodle two" alt>
         </div>
     </section>
 
@@ -383,15 +343,15 @@
                 <div class="col-md-4">
                     <div class="card card-pricing">
                         <div class="card-body text-center">
-                            <p class="card-pricing-plan-name fw-bold text-uppercase">Bachelor's Of Computer Application
+                            <p class="card-pricing-plan-name fw-bold text-uppercase">Bachelor's Of Computer Application (Hons.)
                             </p>
-                            <i class="card-pricing-icon ri-user-line text-primary"></i>
-                            <h2 class="card-pricing-price">INR 84,000</h2>
+                            <img src="<?php echo base_url()?>assets/images/awards/bca.png">
+                            <h2 class="card-pricing-price">INR 14,000/- Sem.</h2>
                             <ul class="card-pricing-features">
-                                <li>3 years Hons. Course</li>
+                                <li>4 years Hons. Course</li>
                                 <li>60 Seats</li>
                             </ul>
-                            <button class="btn btn-primary mt-4 mb-2 rounded-pill">Choose Plan</button>
+                            <button class="btn btn-primary mt-4 mb-2 rounded-pill">Admission Now</button>
                         </div>
                     </div> <!-- end Pricing_card -->
                 </div> <!-- end col -->
@@ -400,15 +360,15 @@
 
                     <div class="card card-pricing">
                         <div class="card-body text-center">
-                            <p class="card-pricing-plan-name fw-bold text-uppercase">Bachelor's Of Computer Application
+                            <p class="card-pricing-plan-name fw-bold text-uppercase">Bachelor's Of Buisness Administration (Hons.)
                             </p>
-                            <i class="card-pricing-icon ri-user-line text-primary"></i>
-                            <h2 class="card-pricing-price">INR 84,000</h2>
+                            <img src="<?php echo base_url()?>assets/images/awards/bba.png">
+                            <h2 class="card-pricing-price">INR 11,500/- Sem.</h2>
                             <ul class="card-pricing-features">
                                 <li>4 years Hons. Course</li>
                                 <li>60 Seats</li>
                             </ul>
-                            <button class="btn btn-primary mt-4 mb-2 rounded-pill">Choose Plan</button>
+                            <button class="btn btn-primary mt-4 mb-2 rounded-pill">Admission Now</button>
                         </div>
                     </div> <!-- end Pricing_card -->
                 </div> <!-- end col -->
@@ -417,15 +377,15 @@
 
                     <div class="card card-pricing">
                         <div class="card-body text-center">
-                            <p class="card-pricing-plan-name fw-bold text-uppercase">Bachelor's Of Computer Application
+                            <p class="card-pricing-plan-name fw-bold text-uppercase">B.Sc. Bio-Technology (Hons.)
                             </p>
-                            <i class="card-pricing-icon ri-user-line text-primary"></i>
-                            <h2 class="card-pricing-price">INR 84,000</h2>
+                            <img src="<?php echo base_url()?>assets/images/awards/bio_tech.png">
+                            <h2 class="card-pricing-price">INR 15,000/- Sem.</h2>
                             <ul class="card-pricing-features">
                                 <li>4 years Hons. Course</li>
                                 <li>60 Seats</li>
                             </ul>
-                            <button class="btn btn-primary mt-4 mb-2 rounded-pill">Choose Plan</button>
+                            <button class="btn btn-primary mt-4 mb-2 rounded-pill">Admission Now</button>
                         </div>
                     </div> <!-- end Pricing_card -->
                 </div> <!-- end col -->
@@ -466,15 +426,16 @@
                             <i class="icon icon-quote watermark-icon"></i>
                             <p><em>Education is the manifestetion of the perfection already in man</em></p>
                             <div class="review-image">
-                                <img src="<?php echo base_url() ?>assets/images/narendra.jpg"" alt>
+                                <img src="<?php echo base_url() ?>assets/images/narendra.jpg"alt>
                             </div>
-                            <div class="reviewer-bio">
+                            <div class=" reviewer-bio">
                                 <h5><em>~ Swami Vivekanada</em></h5>
                             </div>
                         </div>
                         <div class="review-content text-center">
                             <i class="icon icon-quote watermark-icon"></i>
-                            <p><em>Programming is a skill best aquired by practice and example rather than books..</em></p>
+                            <p><em>Programming is a skill best aquired by practice and example rather than books..</em>
+                            </p>
                             <div class="review-image">
                                 <img src="<?php echo base_url() ?>assets/images/turing.jpeg" alt>
                             </div>
@@ -491,4 +452,5 @@
 
     <?php $this->load->view("panel_base/sections/scripts.php"); ?>
 </body>
+
 </html>

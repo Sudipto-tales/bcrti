@@ -18,4 +18,10 @@ class Page_controller extends MX_Controller
 	{
         $this->load->view('gallery');
     }
+
+    public function Placement()
+	{
+        $this->load->view('placement');
+    }
+
 }

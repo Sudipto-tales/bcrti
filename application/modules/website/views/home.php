@@ -37,7 +37,6 @@
 </head>
 
 <body>
-
     <!-- Menu bar start -->
     <?php $this->load->view("panel_base/sections/header.php"); ?>
 
@@ -186,7 +185,7 @@
                         <h4 class="xs-title">Digital library</h4>
                         <p>All the departmental students can search their books and notes
                             in their corresponding department. </p>
-                        <a href="#" class="simple-btn"><i class="icon icon-right-arrow2"></i></a>
+                        <a href="<?php echo base_url() ?>digital_library" class="simple-btn"><i class="icon icon-right-arrow2"></i></a>
                     </div>
                 </div>
             </div>
@@ -196,7 +195,7 @@
                         <i class="icon icon-layers"></i>
                         <h4 class="xs-title">Administration</h4>
                         <p>Efficient and student-centered administration at Cyber Research And training Institute </p>
-                        <a href="#" class="simple-btn"><i class="icon icon-right-arrow2"></i></a>
+                        <a href="<?php echo base_url() ?>about" class="simple-btn"><i class="icon icon-right-arrow2"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -204,7 +203,7 @@
                         <i class="fa-solid fa-building-user"></i>
                         <h4 class="xs-title">Placement</h4>
                         <p>Unlock your potential with our top-notch placement program. </p>
-                        <a href="#" class="simple-btn"><i class="icon icon-right-arrow2"></i></a>
+                        <a href="<?php echo base_url() ?>placement" class="simple-btn"><i class="icon icon-right-arrow2"></i></a>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
@@ -212,7 +211,7 @@
                         <i class="fa-solid fa-person-harassing"></i>
                         <h4 class="xs-title">Anti Ragging</h4>
                         <p>CRTI strictly prohibits ragging within the campus and hostel premises. </p>
-                        <a href="#" class="simple-btn"><i class="icon icon-right-arrow2"></i></a>
+                        <a href="<?php echo base_url() ?>blogs/anti_raging" class="simple-btn"><i class="icon icon-right-arrow2"></i></a>
                     </div>
                 </div>
             </div>

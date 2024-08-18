@@ -15,12 +15,10 @@
                         <div class="footer-widget">
                             <h4 class="widget-title">Pages</h4>
                             <ul class="xs-list">
-                                <li><a href="<?php echo base_url() ?>#">About us</a></li>
-                                <li><a href="<?php echo base_url() ?>#">Service</a></li>
-                                <li><a href="<?php echo base_url() ?>#">Contact Us</a></li>
-                                <li><a href="<?php echo base_url() ?>#">Blogs</a></li>
-                                <li><a href="<?php echo base_url() ?>#">Teachers</a></li>
-                                <li><a href="<?php echo base_url() ?>#">Project</a></li>
+                                <li><a href="<?php echo base_url() ?>about">About us</a></li>
+                                <li><a href="<?php echo base_url() ?>contact_us">Contact Us</a></li>
+                                <li><a href="<?php echo base_url() ?>blogs">Blogs</a></li>
+                                <li><a href="<?php echo base_url() ?>faculty">Teachers</a></li>
                             </ul>
                         </div>
                     </div>
@@ -28,8 +26,8 @@
                         <div class="footer-widget">
                             <h4 class="widget-title">Special Features</h4>
                             <ul class="xs-list">
-                                <li><a href="<?php echo base_url() ?>#">Digital Lirary</a></li>
-                                <li><a href="<?php echo base_url() ?>#">Exam Document</a></li>
+                                <li><a href="<?php echo base_url() ?>digital_library">Digital Lirary</a></li>
+                                <li><a href="<?php echo base_url() ?>document">Exam Document</a></li>
                                 <li><a href="<?php echo base_url() ?>#">Project</a></li>
                             </ul>
                         </div>
@@ -38,7 +36,7 @@
                         <div class="footer-widget">
                             <h4 class="widget-title">Social Media</h4>
                             <ul class="xs-list">
-                                <li><a href="<?php echo base_url() ?>#">Facebook</a></li>
+                                <li><a href="https://www.facebook.com/bardhamancrti/">Facebook</a></li>
                                 <li><a href="<?php echo base_url() ?>#">Twitter</a></li>
                                 <li><a href="<?php echo base_url() ?>#">Linkedin</a></li>
                             </ul>

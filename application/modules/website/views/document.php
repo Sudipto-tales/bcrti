@@ -89,200 +89,225 @@
                                 <div class="tab-pane active" id="admit-1" role="tabpane1">
                                     <h4 class="card-title mb-4">Admit Card Download</h4>
 
-                                    <form>
-                                        <div class="mb-3">
-                                            <label for="formrow-firstname-input" class="form-label">Full name</label>
-                                            <input type="text" class="form-control" id="formrow-firstname-input">
-                                        </div>
+                                    <?php echo form_open_multipart('documents/admit'); ?>
 
-                                        <div class="row">
+                                    <?php echo isset($error) ? $error : ''; ?>
+                                    <div class="mb-3">
+                                        <label for="fullname" class="form-label">Full name</label>
+                                        <input type="text" class="form-control" id="name" name="full_name"
+                                            value="<?php echo set_value('name'); ?>">
+                                        <?php echo form_error('name'); ?>
+                                    </div>
 
-                                            <div class="col-md-6">
-
-                                                <div class="mb-3">
-                                                    <label for="formrow-firstname-input" class="form-label">Father's
-                                                        name</label>
-                                                    <input type="text" class="form-control"
-                                                        id="formrow-firstname-input">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="mb-3">
-                                                    <label for="example-date-input" class="form-label">Date of
-                                                        Birth</label>
-
-                                                    <input class="form-control" type="date" value="2003-12-24"
-                                                        id="example-date-input">
-
-                                                </div>
-
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="fathername" class="form-label">Father's name</label>
+                                                <input type="text" class="form-control" id="fathername"
+                                                    name="father_name" value="<?php echo set_value('fathername'); ?>">
+                                                <?php echo form_error('fathername'); ?>
                                             </div>
                                         </div>
-
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Stream</label>
-                                                    <select name="stream" class="form-select form-control" required>
-                                                        <option>BCA</option>
-                                                        <option>BBA</option>
-                                                        <option>Bio-Tech</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Semester</label>
-                                                    <select name="semester" class="form-select form-control" required>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                    </select>
-                                                </div>
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="dob" class="form-label">Date of Birth</label>
+                                                <input class="form-control" type="date" id="dob" name="dob"
+                                                    value="<?php echo set_value('dob'); ?>">
+                                                <?php echo form_error('dob'); ?>
                                             </div>
                                         </div>
+                                    </div>
 
-                                        <div>
-                                            <button type="submit" class="btn btn-primary w-md"><i
-                                                    class="fas fa-search"></i> Search</button>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Stream</label>
+                                                <select name="stream" id="stream" class="form-select form-control"
+                                                    required>
+
+                                                    <option value="bca" <?php echo set_select('stream', 'bca'); ?>>BCA
+                                                    </option>
+                                                    <option value="bba" <?php echo set_select('stream', 'bba'); ?>>BBA
+                                                    </option>
+                                                    <option value="bio_tech" <?php echo set_select('stream', 'bio_tech'); ?>>Bio-Tech</option>
+                                                </select>
+                                                <?php echo form_error('stream'); ?>
+                                            </div>
                                         </div>
-                                    </form>
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Semester</label>
+                                                <select name="sem" class="form-select form-control" required>
+                                                    <option value="">Select Semester</option>
+                                                    <option value="1" <?php echo set_select('sem', '1'); ?>>1</option>
+                                                    <option value="2" <?php echo set_select('sem', '2'); ?>>2</option>
+                                                    <option value="3" <?php echo set_select('sem', '3'); ?>>3</option>
+                                                    <option value="4" <?php echo set_select('sem', '4'); ?>>4</option>
+                                                    <option value="5" <?php echo set_select('sem', '5'); ?>>5</option>
+                                                </select>
+                                                <?php echo form_error('sem'); ?>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <button type="submit" class="btn btn-primary w-md"><i class="fas fa-search"></i>
+                                            Search</button>
+                                    </div>
+                                    <?php echo form_close(); ?>
+
                                 </div>
 
 
                                 <div class="tab-pane" id="result-1" role="tabpane1">
                                     <h4 class="card-title mb-4">Result Download</h4>
 
-                                    <form>
-                                        <div class="mb-3">
-                                            <label for="formrow-firstname-input" class="form-label">Full name</label>
-                                            <input type="text" class="form-control" id="formrow-firstname-input">
-                                        </div>
+                                    <?php echo form_open_multipart('documents/result'); ?>
 
-                                        <div class="row">
+                                    <?php echo isset($error) ? $error : ''; ?>
+                                    <div class="mb-3">
+                                        <label for="fullname" class="form-label">Full name</label>
+                                        <input type="text" class="form-control" id="name" name="full_name"
+                                            value="<?php echo set_value('name'); ?>">
+                                        <?php echo form_error('name'); ?>
+                                    </div>
 
-                                            <div class="col-md-6">
-                                                <div class="mb-3">
-                                                    <label for="formrow-email-input" class="form-label">Roll
-                                                        No.</label>
-                                                    <input type="email" class="form-control" id="formrow-roll-input">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="mb-3">
-                                                    <label for="example-date-input" class="form-label">Date of
-                                                        Birth</label>
-
-                                                    <input class="form-control" type="date" value="2003-12-24"
-                                                        id="example-date-input">
-
-                                                </div>
-
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="roll" class="form-label">Roll No.</label>
+                                                <input type="text" class="form-control" id="roll" name="roll"
+                                                    value="<?php echo set_value('roll'); ?>">
+                                                <?php echo form_error('roll'); ?>
                                             </div>
                                         </div>
-
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Stream</label>
-                                                    <select name="stream" class="form-select form-control" required>
-                                                        <option>BCA</option>
-                                                        <option>BBA</option>
-                                                        <option>Bio-Tech</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Semester</label>
-                                                    <select name="semester" class="form-select form-control" required>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                    </select>
-                                                </div>
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="dob" class="form-label">Date of Birth</label>
+                                                <input class="form-control" type="date" id="dob" name="dob"
+                                                    value="<?php echo set_value('dob'); ?>">
+                                                <?php echo form_error('dob'); ?>
                                             </div>
                                         </div>
+                                    </div>
 
-                                        <div>
-                                            <button type="submit" class="btn btn-primary w-md"><i
-                                                    class="fas fa-search"></i> Search</button>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Stream</label>
+                                                <select name="stream" id="stream" class="form-select form-control"
+                                                    required>
+
+                                                    <option value="bca" <?php echo set_select('stream', 'bca'); ?>>BCA
+                                                    </option>
+                                                    <option value="bba" <?php echo set_select('stream', 'bba'); ?>>BBA
+                                                    </option>
+                                                    <option value="bio_tech" <?php echo set_select('stream', 'bio_tech'); ?>>Bio-Tech</option>
+                                                </select>
+                                                <?php echo form_error('stream'); ?>
+                                            </div>
                                         </div>
-                                    </form>
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Semester</label>
+                                                <select name="sem" class="form-select form-control" required>
+                                                    <option value="">Select Semester</option>
+                                                    <option value="1" <?php echo set_select('sem', '1'); ?>>1</option>
+                                                    <option value="2" <?php echo set_select('sem', '2'); ?>>2</option>
+                                                    <option value="3" <?php echo set_select('sem', '3'); ?>>3</option>
+                                                    <option value="4" <?php echo set_select('sem', '4'); ?>>4</option>
+                                                    <option value="5" <?php echo set_select('sem', '5'); ?>>5</option>
+                                                </select>
+                                                <?php echo form_error('sem'); ?>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <button type="submit" class="btn btn-primary w-md"><i class="fas fa-search"></i>
+                                            Search</button>
+                                    </div>
+                                    <?php echo form_close(); ?>
                                 </div>
 
                                 <div class="tab-pane" id="marksheet-1" role="tabpane1">
                                     <h4 class="card-title mb-4">Mark Sheet Download</h4>
 
-                                    <form method="POST" action="">
-                                        <div class="mb-3">
-                                            <label for="formrow-firstname-input" class="form-label">Full name</label>
-                                            <input type="text" class="form-control" id="name">
-                                        </div>
+                                    <?php echo form_open_multipart('documents/marksheet'); ?>
 
-                                        <div class="mb-3">
-                                            <label for="formrow-firstname-input" class="form-label">Father's
-                                                name</label>
-                                            <input type="text" class="form-control" id="father_name">
-                                        </div>
+                                    <?php echo isset($error) ? $error : ''; ?>
+                                    <div class="mb-3">
+                                        <label for="fullname" class="form-label">Full name</label>
+                                        <input type="text" class="form-control" id="name" name="full_name"
+                                            value="<?php echo set_value('name'); ?>" required>
+                                        <?php echo form_error('name'); ?>
+                                    </div>
 
-                                        <div class="row">
 
-                                            <div class="col-md-6">
-                                                <div class="mb-3">
-                                                    <label for="formrow-email-input" class="form-label">Roll
-                                                        No.</label>
-                                                    <input type="email" class="form-control" id="roll" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="mb-3">
-                                                    <label for="example-date-input" class="form-label">Date of
-                                                        Birth</label>
+                                    <div class="mb-3">
+                                        <label for="fathername" class="form-label">Father's name</label>
+                                        <input type="text" class="form-control" id="fathername" name="father_name"
+                                            value="<?php echo set_value('fathername'); ?>" required>
+                                        <?php echo form_error('fathername'); ?>
+                                    </div>
 
-                                                    <input class="form-control" type="date" value="" id="dob">
-
-                                                </div>
-
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="roll" class="form-label">Roll No.</label>
+                                                <input type="text" class="form-control" id="roll" name="roll"
+                                                    value="<?php echo set_value('roll'); ?>" required>
+                                                <?php echo form_error('roll'); ?>
                                             </div>
                                         </div>
-
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Stream</label>
-
-                                                    <select name="stream" class="form-select form-control" required>
-                                                        <option>BCA</option>
-                                                        <option>BBA</option>
-                                                        <option>Bio-Tech</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Semester</label>
-
-                                                    <select name="semester" class="form-select form-control" required>
-                                                        <option>1</option>
-                                                        <option>2</option>
-                                                        <option>3</option>
-                                                        <option>4</option>
-                                                        <option>5</option>
-                                                    </select>
-                                                </div>
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label for="dob" class="form-label">Date of Birth</label>
+                                                <input class="form-control" type="date" id="dob" name="dob"
+                                                    value="<?php echo set_value('dob'); ?>" required>
+                                                <?php echo form_error('dob'); ?>
                                             </div>
                                         </div>
+                                    </div>
 
-                                        <div>
-                                            <button type="submit" class="btn btn-primary w-md"><i
-                                                    class="fas fa-search"></i> Search</button>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Stream</label>
+                                                <select name="stream" id="stream" class="form-select form-control"
+                                                    required>
+
+                                                    <option value="bca" <?php echo set_select('stream', 'bca'); ?>>BCA
+                                                    </option>
+                                                    <option value="bba" <?php echo set_select('stream', 'bba'); ?>>BBA
+                                                    </option>
+                                                    <option value="bio_tech" <?php echo set_select('stream', 'bio_tech'); ?>>Bio-Tech</option>
+                                                </select>
+                                                <?php echo form_error('stream'); ?>
+                                            </div>
                                         </div>
-                                    </form>
+                                        <div class="col-md-6">
+                                            <div class="mb-3">
+                                                <label class="form-label">Semester</label>
+                                                <select name="sem" class="form-select form-control" required>
+                                                    <option value="">Select Semester</option>
+                                                    <option value="1" <?php echo set_select('sem', '1'); ?>>1</option>
+                                                    <option value="2" <?php echo set_select('sem', '2'); ?>>2</option>
+                                                    <option value="3" <?php echo set_select('sem', '3'); ?>>3</option>
+                                                    <option value="4" <?php echo set_select('sem', '4'); ?>>4</option>
+                                                    <option value="5" <?php echo set_select('sem', '5'); ?>>5</option>
+                                                </select>
+                                                <?php echo form_error('sem'); ?>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <button type="submit" class="btn btn-primary w-md"><i class="fas fa-search"></i>
+                                            Search</button>
+                                    </div>
+                                    <?php echo form_close(); ?>
+                                    
                                 </div>
                             </div>
                         </div>

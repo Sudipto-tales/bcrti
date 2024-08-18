@@ -44,67 +44,14 @@
 </head>
 
 <body>
+    <?php $this->load->view("panel_base/sections/header1.php"); ?>
 
-    <!-- Menu bar start -->
-    <header class="xs-header header-transparent nav-lights">
-        <div class="container">
-            <nav class="xs-menus clearfix">
-                <div class="nav-header">
-                    <a class="nav-brand" href="index.html">
-                        <img src="assets/images/crti_logo-removebg.png" alt>
-                    </a>
-                    <div class="nav-toggle"></div>
-                </div>
-                <div class="nav-menus-wrapper align-to-right">
-
-                    <ul class="nav-menu">
-                        <li><a href="<?php echo base_url() ?>home">HOME</a>
-
-                        </li>
-                        <li><a href="<?php echo base_url() ?>about">ABOUT</a></li>
-                        <li>
-                            <a href="#">ACADEMIC</a>
-                            <ul class="nav-dropdown xs-icon-menu">
-                                <li class="single-menu-item">
-                                    <a href="<?php echo base_url() ?>cource"><i class="icon icon-presentation2"></i>Cources</a>
-                                </li>
-                                <li class="single-menu-item">
-                                    <a href="parallax-service.html"><i class="icon icon-presentation"></i> Digital
-                                        Laboratory</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="#">FACULTIES</a>
-                            
-                        </li>
-                        <li><a href="#">BLOG</a>
-                        </li>
-                        <li>
-                            <a href="<?= base_url() ?>contact_us">CONTACTS</a>
-                        </li>
-                    </ul>
-                    <ul class="xs-menu-tools">
-
-                        <li>
-                            <a href="#" class="navSidebar-button"><i class="icon icon-burger-menu"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-
-    <div class="xs-inner-banner inner-banner2" style="background-image:url('assets/images/banner/2.jpg')">
+    <div class="xs-inner-banner" style="background-image:url('')">
         <div class="container">
             <div class="row">
                 <div class="col-md-7 mx-auto">
                     <div class="inner-banner">
-                        <h2 class="inner-banner-title">Our Members</h2>
-                        <ul class="breadcumbs list-inline">
-                            <li><a href="index.html">Home</a></li>
-                            <li>Faculty</li>
-                        </ul>
+                        <h2 class="inner-banner-title">Our Teachers</h2>
                     </div>
                 </div>
             </div>

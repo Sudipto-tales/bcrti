@@ -28,6 +28,14 @@
 <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css" />
 
 <body>
+     <!-- Pre-loader -->
+     <div id="preloader">
+            <div id="status">
+                <div class="bouncing-loader"><div ></div><div ></div><div ></div></div>
+            </div>
+        </div>
+        <!-- End Preloader-->
+         
     <div class="content">
 
         <!-- Start Content-->
@@ -89,9 +97,9 @@
                                                     <?php endif; ?>
                                                 </td>
                                                 <td class="table-action">
-                                                    <a href="<?php echo base_url() ?>assets/books/<?= $value['link'] ?>"
+                                                    <a href="<?php echo base_url() ?>assets/books/<?= $value['file_path'] ?>"
                                                         class="action-icon"> <i class="mdi mdi-eye"></i></a>
-                                                    <a href="<?php echo base_url() ?>assets/books/<?= $value['link'] ?>"
+                                                    <a href="<?php echo base_url() ?>assets/books/<?= $value['file_path'] ?>"
                                                         class="action-icon" download> <i
                                                             class=" ri-download-2-line"></i></a>
                                                 </td>

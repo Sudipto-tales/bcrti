@@ -89,9 +89,9 @@
                                                     <?php endif; ?>
                                                 </td>
                                                 <td class="table-action">
-                                                    <a href="<?php echo base_url() ?>assets/books/<?= $value['link'] ?>"
+                                                    <a href="<?php echo base_url() ?>assets/books/<?= $value['file_path'] ?>"
                                                         class="action-icon"> <i class="mdi mdi-eye"></i></a>
-                                                    <a href="<?php echo base_url() ?>assets/books/<?= $value['link'] ?>"
+                                                    <a href="<?php echo base_url() ?>assets/books/<?= $value['file_path'] ?>"
                                                         class="action-icon" download> <i
                                                             class=" ri-download-2-line"></i></a>
                                                 </td>

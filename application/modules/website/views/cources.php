@@ -56,7 +56,7 @@
 
                         <div class="agency-banner-content banner-style4 text-center">
                             <h1 class="banner-title"><span>BCRTI</span><br>Reboot Your Life With programming</h1>
-                            <a href="#"
+                            <a href="<?php echo base_url()?>comming_soon"
                                 class="btn btn-primary style3">Admission Now</a>
                         </div>
                     </div>
@@ -100,7 +100,7 @@
 
                             </h2><br>
                             <h2 class="entry-title">
-                                <h4><b>Durations :</b> 3 yrs.</h4>
+                                <h4><b>Durations :</b> 4 yrs.</h4>
                                 <h4><b>Eligbility :</b> Pass in 10+2 or equivalant from any recognised board</h4>
                                 <h4><b>Fees :</b> Rs. 23,000 per year</h4>
                             </h2>
@@ -108,7 +108,7 @@
                         <div class="post-footer">
                             <div class="row">
                                 <div class="col-6">
-                                    <a href="news-list.html" class="btn btn-primary btn-gradient3 icon-right">Admission
+                                    <a href="<?php echo base_url()?>comming_soon" class="btn btn-primary btn-gradient3 icon-right">Admission
                                         Now</a>
                                 </div>
                                 <div class="col-6">
@@ -135,15 +135,15 @@
 
                             </h2><br>
                             <h2 class="entry-title">
-                                <h4><b>Durations :</b> 3 yrs.</h4>
+                                <h4><b>Durations :</b> 4 yrs.</h4>
                                 <h4><b>Eligbility :</b> Pass in 10+2 or equivalant from any recognised board</h4>
-                                <h4><b>Fees :</b> Rs. 23,000 per year</h4>
+                                <h4><b>Fees :</b> Rs. 28,000 per year</h4>
                             </h2>
                         </div>
                         <div class="post-footer">
                             <div class="row">
                                 <div class="col-6">
-                                    <a href="news-list.html" class="btn btn-primary btn-gradient3 icon-right">Admission
+                                    <a href="<?php echo base_url()?>comming_soon" class="btn btn-primary btn-gradient3 icon-right">Admission
                                         Now</a>
                                 </div>
                                 <div class="col-6">
@@ -171,15 +171,15 @@
 
                             </h2><br>
                             <h2 class="entry-title">
-                                <h4><b>Durations :</b> 3 yrs.</h4>
+                                <h4><b>Durations :</b> 4 yrs.</h4>
                                 <h4><b>Eligbility :</b> Pass in 10+2 or equivalant from any recognised board</h4>
-                                <h4><b>Fees :</b> Rs. 23,000 per year</h4>
+                                <h4><b>Fees :</b> Rs. 30,000 per year</h4>
                             </h2>
                         </div>
                         <div class="post-footer">
                             <div class="row">
                                 <div class="col-6">
-                                    <a href="news-list.html" class="btn btn-primary btn-gradient3 icon-right">Admission
+                                    <a href="<?php echo base_url()?>comming_soon" class="btn btn-primary btn-gradient3 icon-right">Admission
                                         Now</a>
                                 </div>
                                 <div class="col-6">

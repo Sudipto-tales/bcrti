@@ -11,7 +11,7 @@
                     <li><a href="<?php echo base_url() ?>home">HOME</a>
 
                     </li>
-                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="<?php echo base_url() ?>about">ABOUT</a></li>
                     <li>
                         <a href="<?php echo base_url() ?>comming_soon">ACADEMIC</a>
                         <ul class="nav-dropdown xs-icon-menu">
@@ -24,7 +24,7 @@
                     <li><a href="<?php echo base_url() ?>faculty">FACULTIES</a>
 
                     </li>
-                    <li><a href="#">BLOG</a>
+                    <li><a href="<?php echo base_url() ?>blogs">BLOG</a>
                     </li>
                     <li>
                         <a href="<?= base_url() ?>contact_us">CONTACTS</a>
