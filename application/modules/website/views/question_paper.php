@@ -3,7 +3,7 @@
 <html class="no-js" lang="zxx">
 
 <meta charset="utf-8" />
-<title>CRTI Library | BBA</title>
+<title>QN Paper</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
 <meta content="Coderthemes" name="author" />
@@ -39,6 +39,7 @@
         </div>
     </div>
     <!-- End Preloader-->
+
     <div class="content">
 
         <!-- Start Content-->
@@ -48,16 +49,9 @@
             <div class="row">
                 <div class="col-12">
                     <div class="page-title-box">
-                        <div class="page-title-right">
-                            <ol class="breadcrumb m-0">
-                                <li class="breadcrumb-item"><a href="<?php echo base_url() ?>home">Bcrti</a>
-                                </li>
-                                <li class="breadcrumb-item"><a href="<?php echo base_url() ?>digital_library">Digital
-                                        Library</a></li>
-                                <li class="breadcrumb-item active">BBA</li>
-                            </ol>
-                        </div>
-                        <h4 class="page-title">BIO-TECH Depertments - BOOKS</h4>
+                        <h4 class="page-title">
+                            <ul>Previous QN Paper</ul>
+                        </h4>
                     </div>
                 </div>
             </div>
@@ -71,10 +65,10 @@
                                 <table id="myTable" class="table table-sm text-wrap table-centered">
                                     <thead class="table-light">
                                         <tr>
-                                            <th>Book</th>
-                                            <th>Author</th>
-                                            <th>Edition</th>
-                                            <th>Status</th>
+                                            <th>Paper Code</th>
+                                            <th>Subject</th>
+                                            <th>Semester</th>
+                                            <th>Year</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -82,25 +76,22 @@
                                         <?php foreach ($data as $value): ?>
                                             <tr>
                                                 <td>
-                                                    <?= $value['name'] ?>
+                                                    <?= $value['code'] ?>
                                                 </td>
                                                 <td>
-                                                    <?= $value['author'] ?>
+                                                    <?= $value['subject'] ?>
                                                 </td>
                                                 <td>
-                                                    <?= $value['edition'] ?>
+                                                    <?= $value['sem'] ?>
                                                 </td>
                                                 <td>
-                                                    <?php if ($value['status'] == 'Available'): ?>
-                                                        <span class="badge bg-success">Available</span>
-                                                    <?php elseif ($value['status'] != 'Available'): ?>
-                                                        <span class="badge bg-danger">Not-Available</span>
-                                                    <?php endif; ?>
+                                                    <?= $value['year'] ?>
                                                 </td>
+                                                
                                                 <td class="table-action">
-                                                    <a href="<?php echo base_url() ?>assets/books/<?= $value['file_path'] ?>"
+                                                    <a href="<?php echo base_url() ?>assets/QNpaper/<?= $value['file_path'] ?>"
                                                         class="action-icon"> <i class="mdi mdi-eye"></i></a>
-                                                    <a href="<?php echo base_url() ?>assets/books/<?= $value['file_path'] ?>"
+                                                    <a href="<?php echo base_url() ?>assets/QNpaper/<?= $value['file_path'] ?>"
                                                         class="action-icon" download> <i
                                                             class=" ri-download-2-line"></i></a>
                                                 </td>
@@ -112,58 +103,56 @@
                         </div> <!-- end card-body-->
                     </div> <!-- end card-->
                 </div> <!-- end col -->
-            </div>
-            <!-- end row -->
 
-        </div> <!-- container -->
 
-    </div> <!-- content -->
-    <!-- Footer Start -->
-    <footer class="footer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6">
-                    <script>document.write(new Date().getFullYear())</script> © BCRTI - crti.co.in
-                </div>
-                <div class="col-md-6">
-                    <div class="text-md-end footer-links d-none d-md-block">
-                        <a href="javascript: void(0);">About</a>
-                        <a href="javascript: void(0);">Support</a>
-                        <a href="javascript: void(0);">Contact Us</a>
+            </div> <!-- content -->
+            <!-- Footer Start -->
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <script>document.write(new Date().getFullYear())</script> © BCRTI - crti.co.in
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-md-end footer-links d-none d-md-block">
+                                <a href="<?php echo base_url() ?>home">Home</a>
+                                <a href="<?php echo base_url() ?>about">About</a>
+                                <a href="<?php echo base_url() ?>contact_us">Contact Us</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </footer>
+            <!-- end Footer -->
         </div>
-    </footer>
-    <!-- end Footer -->
-    </div>
 
 
 
-    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
-    <!-- Vendor js -->
-    <script src="<?php echo base_url() ?>raw/assets/js/vendor.min.js"></script>
+        <script src="https://cdn.datatables.net/2.0.8/js/dataTables.js"></script>
+        <!-- Vendor js -->
+        <script src="<?php echo base_url() ?>raw/assets/js/vendor.min.js"></script>
 
-    <!-- Datatable js -->
-    <script src="<?php echo base_url() ?>raw/assets/vendor/datatables.net/js/jquery.dataTables.min.js"></script>
-    <script src="<?php echo base_url() ?>raw/assets/vendor/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
-    <script
-        src="<?php echo base_url() ?>raw/assets/vendor/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-    <script
-        src="<?php echo base_url() ?>raw/assets/vendor/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
-    <script
-        src="<?php echo base_url() ?>raw/assets/vendor/jquery-datatables-checkboxes/js/dataTables.checkboxes.min.js"></script>
+        <!-- Datatable js -->
+        <script src="<?php echo base_url() ?>raw/assets/vendor/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script
+            src="<?php echo base_url() ?>raw/assets/vendor/datatables.net-bs5/js/dataTables.bootstrap5.min.js"></script>
+        <script
+            src="<?php echo base_url() ?>raw/assets/vendor/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+        <script
+            src="<?php echo base_url() ?>raw/assets/vendor/datatables.net-responsive-bs5/js/responsive.bootstrap5.min.js"></script>
+        <script
+            src="<?php echo base_url() ?>raw/assets/vendor/jquery-datatables-checkboxes/js/dataTables.checkboxes.min.js"></script>
 
-    <!-- Product Demo App js -->
-    <script src="<?php echo base_url() ?>raw/assets/js/pages/demo.products.js"></script>
+        <!-- Product Demo App js -->
+        <script src="<?php echo base_url() ?>raw/assets/js/pages/demo.products.js"></script>
 
-    <!-- App js -->
-    <script src="<?php echo base_url() ?>raw/assets/js/app.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#myTable').DataTable();
-        });
-    </script>
+        <!-- App js -->
+        <script src="<?php echo base_url() ?>raw/assets/js/app.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('#myTable').DataTable();
+            });
+        </script>
 </body>
 
 </html>

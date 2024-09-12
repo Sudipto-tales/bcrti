@@ -130,7 +130,11 @@ class Documents_controller extends MX_Controller
 		}
 	}
 
-
+	public function paper()
+    {
+        $data['data'] = $this->Search_model->qnp_get();
+        $this->load->view('question_paper', $data);
+    }
 
 
 

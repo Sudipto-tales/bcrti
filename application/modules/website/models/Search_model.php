@@ -83,5 +83,12 @@ public function marksheet_get($criteria = array()) {
     $query = $this->db->get();
     return $query->result_array();
 }
+
+public function qnp_get(){
+    $this->db->select("*");
+        $this->db->from("qnp_tbl");
+        $query = $this->db->get();
+        return $query->result_array();
+}
 }
 ?>

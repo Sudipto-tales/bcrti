@@ -28,6 +28,17 @@
 <link rel="stylesheet" href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.css" />
 
 <body>
+    <!-- Pre-loader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="bouncing-loader">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <!-- End Preloader-->
     <div class="content">
 
         <!-- Start Content-->

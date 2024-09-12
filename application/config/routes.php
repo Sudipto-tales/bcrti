@@ -1,15 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-$route['default_controller'] = 'welcome/signup';
+$route['default_controller'] = 'website/Home_controller/index';
 $route['404_override'] = 'construction/index';
 $route['comming_soon'] = 'website/Error_controller/comming_soon';
 $route['translate_uri_dashes'] = FALSE;
 
-$route['login'] = 'welcome/login';
-// $route['register'] = 'competition/register';
-
-$route['home'] = 'website/Home_controller/index';
+//Pages
 $route['about'] = 'website/Page_controller/about';
 $route['cource'] = 'website/Page_controller/cources';
 $route['gallery'] = 'website/Page_controller/gallery';

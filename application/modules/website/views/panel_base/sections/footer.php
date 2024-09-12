@@ -27,7 +27,8 @@
                             <h4 class="widget-title">Special Features</h4>
                             <ul class="xs-list">
                                 <li><a href="<?php echo base_url() ?>digital_library">Digital Lirary</a></li>
-                                <li><a href="<?php echo base_url() ?>document">Exam Document</a></li>
+                                <li><a href="<?php echo base_url() ?>documents">Exam Document</a></li>
+                                <li><a href="<?php echo base_url() ?>documents/qn_paper">Privious Question Paper</a></li>
                                 <li><a href="<?php echo base_url() ?>#">Project</a></li>
                             </ul>
                         </div>
